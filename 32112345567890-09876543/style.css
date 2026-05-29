@@ -1,0 +1,21 @@
+.aplle123{ 
+    width:50px ;
+    height: 50px;
+}
+.glina123{
+    width:50px ;
+    height: 50px;
+}
+.ch{
+    padding: 15;
+    width: 150px;
+    height: 200px;
+    background: #6b50ff;
+    border-radius: 5%;
+    padding: 2%;
+
+}
+.button{
+    position: absolute;
+    margin: 10%, 20%;
+}

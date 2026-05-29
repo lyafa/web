@@ -1,0 +1,70 @@
+@font-face {
+      font-family: StalinistOne;
+      src: url(StalinistOne-Regular.ttf);
+   }
+
+.w{
+   border: 20px;
+   
+}
+body{
+   font-family: StalinistOne;
+   
+}
+h1,h3{
+   text-align: center;
+}
+.d-1{
+   background-color: blue;
+   height: 100px;
+   width: 100px;
+
+}
+.d-1:hover{
+   background-color: rgb(13, 255, 0);
+}
+.d-2{
+   background-color: rgb(203, 186, 0);
+   height: 200px;
+   width: 200px;
+}
+.d-2:active{
+   background-color: rgb(255, 0, 106);
+   width: 500px;
+
+}
+.d-3{
+   background-image:url(xxx.jpg) ;
+   height: 300px;
+   width: 300px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   
+}
+
+.d-3:empty{
+   background-image:url(images.jpg) ;
+}
+.box{
+   width: 200px;
+   height: 200px;
+   background-color: blueviolet;
+   transition: all 0.2s;
+}
+.box:hover{
+   background-color: black;
+   border-radius: 100%;
+}
+.box:active{
+   background-color: rgb(255, 145, 0);
+   width: 500px;
+   border-radius: 0%;
+
+}
+.box{
+   text-decoration: none;
+
+}
+.box:hover{
+   text-decoration: underline;
+}

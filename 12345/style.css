@@ -1,0 +1,13 @@
+.box{
+    
+   background-color: green;
+   width: 100px;
+   height: 100px;
+   border-radius: 10%;
+   padding: 10px;
+   margin: 20px;
+   
+}
+.box p,button{
+    color: red;
+}

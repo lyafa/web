@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.textured-background{
+  background-image: url('bumaga2.jpg');
+  background-size: cover; /* Масштабирует изображение на весь элемент */
+  background-repeat: repeat; /* Повторяет изображение, если оно меньше элемента */
+  background-position: center; /* Центрирует изображение */
+  /* opacity: 0.6; */
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg,rgb(204, 255, 0),rgb(43, 70, 1));
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+.login-box{
+    background: rgba(158, 245, 27, 0.594);
+    backdrop-filter: blur(10px);
+    border-radius: 11px;
+    padding: 32px 28px;
+    width: 100%;
+    max-width: 380px;
+    border: 3px, solid #ffd0639d;
+
+}
+.login-box h2{
+    color: #260d689d;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 28px;
+
+}
+.input-group{
+    margin-bottom: 28px;
+}
+input{
+    width: 100%;
+    padding: 12px 16px;
+    background: rgb(182, 172, 94)(0, 255, 145);
+    border: 1px solid hsla(117, 59%, 13%, 0.337);
+    border-radius: 60px;
+    font-size: 15px;
+    color: rgb(57, 6, 134);
+    outline: none;
+}
+
+    input::placeholder{
+        color: aquamarine;
+    }
+    button{
+        width: 100%;
+        padding: 12px;
+        background: #16ba019d;
+        border: none;
+        border-radius:  60px;
+        color: aliceblue;
+        cursor: pointer;
+    }
+    button:hover{background: rgba(39, 91, 5, 0.608);
+    transform: scale(1.02);
+}
+.message{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 60px;
+    background: rgb(182, 172, 94)(0, 255, 145);
+    color: rgb(255, 255, 255);
+}
+.eror{
+    background: #ff0000;
+    color: chocolate;
+}
+    .success{
+        background: greenyellow;
+        color: rgb(62, 62, 62);
+    }
+

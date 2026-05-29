@@ -1,0 +1,35 @@
+img{
+    height: 500px;
+
+border-radius: 20px;
+}
+
+.glavniy{
+    margin: auto;
+    width: 80%;
+
+}
+.c{
+    display: flex;
+}
+.kub1{
+    background: #48ff76;
+    width:30%;
+    height: 200px;
+    margin: 20px;
+
+}
+.kub2{
+    background-color: blue;
+    width:30%;
+    height: 200px;
+    margin: 20px;
+}
+.kub3{
+    background-color: aqua;
+    width:30%;
+    height: 200px;
+    margin: 20px;
+
+}
+
