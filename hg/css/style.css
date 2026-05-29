@@ -1,0 +1,607 @@
+* {
+     box-sizing: border-box;
+     margin: 0;
+}
+
+body {
+     font-family: 'Roboto', sans-serif; 
+        
+}
+.container {
+     width: 80%;
+     margin: auto;
+}
+.logo{
+     max-height: 5em;
+     max-width: 5em;
+     }
+
+
+
+.header {
+     background: #20562d;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 2%;
+     padding-left: 10%;
+     padding-right: 10%;
+     padding-bottom: 2%;
+     
+}
+/* /задаёт цвет фона элемента класса .header/
+background: #20562d;
+
+/устанавливает значение свойства display на flex, что позволяет создавать 
+гибкую модель блочного расположения элементов/
+display: flex;
+
+/выравнивает элементы по вертикали/
+align-items: center;
+
+/выравнивает элементы по горизонтали/
+justify-content: space-between;
+
+/задаёт внешний отступ сверху, равный 2% от ширины контейнера/
+padding-top: 2%;
+
+/задаёт внешний отступ слева, равный 10% от ширины контейнера/
+padding-left: 10%;
+
+/задаёт внешний отступ справа, равный 10% от ширины контейнера/
+padding-right: 10%;
+
+/задаёт внешний отступ снизу, равный 2% от ширины контейнера/
+padding-bottom: 2%;
+ */
+
+.input {
+     background: #20562d;
+     border: 1px solid #9dcb46;
+     border-radius: 10px;
+     font-size: 16px;
+     line-height: 24px;
+     padding: 8px;
+     padding-left: 35px;
+     background-repeat: no-repeat;
+     background-position: left 11px center;
+
+}
+
+/* 
+/задаёт цвет фона элемента класса .input/
+background: #20562d;
+
+/задаёт толщину рамки элемента класса .input в 1 пиксель и цвет #9dcb46/
+border: 1px solid #9dcb46;
+
+/задаёт радиус скругления углов элемента класса .input в 10 пикселей/
+border-radius: 10px;
+
+/задаёт размер шрифта элемента класса .input в 16 пикселей/
+font-size: 16px;
+
+/задаёт высоту строки шрифта элемента класса .input в 24 пикселя/
+line-height: 24px;
+
+/задаёт внутренний отступ для всех сторон элемента класса .input/
+padding: 8px;
+
+/задаёт внутренний отступ слева элемента класса .input в 35 пикселей/
+padding-left: 35px;
+
+/задаёт расположение фонового изображения по горизонтали слева и вертикали по центру/
+background-position: left 11px center;
+
+/задаёт повторение фонового изображения/
+background-repeat: no-repeat; */
+
+::placeholder{
+     color: #9dcb46;
+}
+
+.input-address {
+     flex: 0.8;
+     background-image: url('../img/home.svg');
+}
+
+.input-search {
+     width: 300px;
+     background-image: url('../img/search.svg');
+     margin-left: auto;
+}
+
+.buttons {
+     display: flex;
+     align-items: center;
+
+}
+
+.button {
+     display: flex;
+     align-items: center;
+     margin: 0px 10px;
+     padding: 8px 16px;
+     background: #9dcb46;
+     border: 1px solid;
+     box-sizing: border-box;
+     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+     border-radius: 10px;
+     color:#20562d;
+     font-size: 16px;
+     line-height: 24px;
+}
+/* / Задаёт отображение элемента в виде гибкого контейнера с выравниванием элементов по вертикали и горизонтали /
+display: flex;
+
+/ Задаёт выравнивание элементов по вертикали внутри контейнера /
+align-items: center;
+
+/ Задаёт внешние отступы элемента со всех сторон, равные 0 пикселей по вертикали и 10 пикселей по горизонтали /
+margin: 0px 10px;
+
+/ Задаёт внутренние отступы элемента со всех сторон, равные 8 пикселям по вертикали и 16 пикселям по горизонтали /
+padding: 8px 16px;
+
+/ Задаёт цвет фона элемента /
+background: #9dcb46;
+
+/ Задаёт толщину рамки элемента равную 1 пикселю /
+border: 1px solid;
+
+/ Задаёт "поток" содержимого элемента так, чтобы учитывать ширину и высоту рамки элемента /
+box-sizing: border-box;
+
+/ Задаёт тень для элемента с горизонтальными и вертикальными смещениями равными 0 пикселей и размытием цвета равным 2 пикселям /
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+
+/ Задаёт радиус скругления углов элемента равный 10 пикселям /
+border-radius: 10px;
+
+/ Задаёт цвет текста внутри элемента /
+color: #20562d;
+
+/ Задаёт размер шрифта текста внутри элемента равный 16 пикселям /
+font-size: 16px;
+
+/ Задаёт высоту строки текста внутри элемента равную 24 пикселям /
+line-height: 24px; */
+
+.button:hover{
+     background: #cb4846;
+}
+
+/* в елках */
+.button-card-text {
+     margin-right: 10px;
+}
+
+.button-icon {
+     margin-right: 6px;
+     /* Свойство vertical-align управляет вертикальным выравниванием элементов 
+     внутри своих родителей.
+      Оно применяется к строчным элементам и к ячейкам таблиц. */
+     vertical-align: middle;
+}
+
+.button-text {
+     vertical-align: middle;
+}
+
+.promo {
+     box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+     background: #9dcb46 url('../img/elka.png') no-repeat top -55px right -250px / 800px;
+     border-radius: 20px;
+     padding: 68px 70px;
+     margin-bottom: 56px;
+}
+
+.promo-text {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 24px;
+     line-height: 28px;
+     color: #267e2e;
+     max-width: 538px;
+}
+
+.promo-title {
+     font-family: 'Rubik Bubbles', sans-serif; 
+     font-style: normal;
+     font-weight: bold;
+     font-size: 39px;
+     line-height: 46px;
+     color: #20562d;
+}
+
+.main {
+     padding: 40px 0px;
+     background: linear-gradient(to bottom right, #20562d,#9dcb46);
+}
+
+.section-heading {
+     display: flex;
+     align-items: center;
+     margin-bottom: 44px;
+}
+
+.section-title {
+     font-style: normal;
+     font-weight: bold;
+     font-size: 36px;
+     line-height: 42px;
+     margin: 0;
+     /* color:  #20562d ;     */
+     color: #9dcb46;
+     margin-right: 30px;
+}
+
+.cards {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     justify-content: space-between;
+}
+
+.card {
+     background-color: linear-gradient(#9dcb46, #20562d);
+     height: 450px;
+     box-shadow: 0px 4px 40px #9dcb46;
+     border-radius: 20px;
+     overflow: hidden;
+     margin-bottom: 30px;
+     flex-basis: 30%;
+     text-decoration: none;
+}
+
+.card-image {
+     width: 384px;
+     height: 250px;
+}
+
+.card-text {
+     padding-top: 20px;
+     padding-bottom: 35px;
+     padding-left: 23px;
+     padding-right: 23px;
+}
+
+.card-heading {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.card-title {
+     margin: 0;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 24px;
+     line-height: 32px;
+     color: #20562d;
+}
+
+
+.card-title-reg {
+     font-weight: 400;
+     margin-bottom: 10px;
+}
+
+
+
+.card-info {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+
+.card-buttons {
+     display: flex;
+     align-items: center;
+     margin-top: 24px;
+}
+
+.card-price-bold {
+     font-weight: bold;
+     font-size: 20px;
+     line-height: 32px;
+     margin-left: 30px
+}
+
+.rating {
+     margin-right: 26px;
+     color: #e3ab04;
+     font-weight: bold;
+     font-size: 18px;
+     line-height: 32px;
+}
+
+.price, .category {
+     color: #73a11f;
+     font-size: 18px;
+     line-height: 32px;
+}
+
+.price {
+     margin-right: 10px;
+}
+
+.ingredients {
+     color: #267e2e;
+     font-size: 18px;
+     line-height: 21px;
+}
+
+.category {
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+     max-width: 150px;
+}
+
+.price:after {
+     content: '';
+     width: 5px;
+     height: 5px;
+     background-color: #9dcb46;
+     display: inline-block;
+     vertical-align: middle;
+     border-radius: 50%;
+     margin-left: 10px;
+}
+
+.footer {
+     padding: 60px 0;
+     background:  #20562d;
+}
+
+.footer-block {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.footer-nav {
+     margin-left: 35px;
+     margin-right: auto;
+}
+
+.footer-link {
+     display: inline-block;
+     color: #9dcb46;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 18px;
+     line-height: 21px;
+     text-decoration: none;
+     text-decoration: none;
+}
+
+.footer-link:not(:last-child) {
+     margin-right: 15px;
+}
+
+.social-networks {
+     display: flex;
+     align-items: center;
+}
+
+.social-network:not(:last-child) {
+     margin-right: 21px;
+}
+/* ========== БАЗОВЫЕ СТИЛИ (Mobile First) ==========
+/* Стили по умолчанию для мобильных телефонов (до 767px) 
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+h1 { font-size: 24px; }
+h2 { font-size: 20px; }
+h3 { font-size: 18px; }
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.col {
+  flex: 0 0 100%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+ ========== МАЛЕНЬКИЕ ТЕЛЕФОНЫ ========== */
+@media (max-width: 320px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  h1 { font-size: 22px; }
+  h2 { font-size: 18px; }
+  
+  .hide-on-mobile-small {
+    display: none;
+  }
+} 
+
+/* ========== ТЕЛЕФОНЫ (горизонтальная ориентация) ========== 
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    max-width: 460px;
+  }
+  
+  .col-phone {
+    flex: 0 0 50%;
+  }
+}
+
+/* ========== ПЛАНШЕТЫ (вертикальная ориентация) ========== 
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 15px;
+  }
+  
+  .container {
+    max-width: 750px;
+    padding: 0 20px;
+  }
+  
+  h1 { font-size: 28px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 20px; }
+  
+  /* Сетка для планшетов 
+  .col-tablet-1 { flex: 0 0 8.333%; }
+  .col-tablet-2 { flex: 0 0 16.666%; }
+  .col-tablet-3 { flex: 0 0 25%; }
+  .col-tablet-4 { flex: 0 0 33.333%; }
+  .col-tablet-6 { flex: 0 0 50%; }
+  .col-tablet-8 { flex: 0 0 66.666%; }
+  .col-tablet-12 { flex: 0 0 100%; }
+}
+
+/* ========== ПЛАНШЕТЫ (горизонтальная ориентация) ========== 
+@media (min-width: 1024px) and (max-width: 1279px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .container {
+    max-width: 960px;
+    padding: 0 30px;
+  }
+  
+  h1 { font-size: 32px; }
+  h2 { font-size: 26px; }
+  h3 { font-size: 22px; }
+}
+
+/* ========== НОУТБУКИ И МАЛЕНЬКИЕ ДЕСКТОПЫ ========== 
+@media (min-width: 1280px) and (max-width: 1439px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    padding: 0 40px;
+  }
+  
+  h1 { font-size: 36px; }
+  h2 { font-size: 30px; }
+  h3 { font-size: 24px; }
+  
+  /* Сетка для десктопов 
+  .col-1 { flex: 0 0 8.333%; }
+  .col-2 { flex: 0 0 16.666%; }
+  .col-3 { flex: 0 0 25%; }
+  .col-4 { flex: 0 0 33.333%; }
+  .col-5 { flex: 0 0 41.666%; }
+  .col-6 { flex: 0 0 50%; }
+  .col-7 { flex: 0 0 58.333%; }
+  .col-8 { flex: 0 0 66.666%; }
+  .col-9 { flex: 0 0 75%; }
+  .col-10 { flex: 0 0 83.333%; }
+  .col-11 { flex: 0 0 91.666%; }
+  .col-12 { flex: 0 0 100%; }
+}
+
+/* ========== БОЛЬШИЕ ДЕСКТОПЫ ========== 
+@media (min-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+  
+  .container {
+    max-width: 1400px;
+    padding: 0 50px;
+  }
+  
+  h1 { font-size: 42px; }
+  h2 { font-size: 34px; }
+  h3 { font-size: 28px; }
+  
+  /* Та же сетка, что и для ноутбуков 
+  .col-1 { flex: 0 0 8.333%; }
+  .col-2 { flex: 0 0 16.666%; }
+  .col-3 { flex: 0 0 25%; }
+  .col-4 { flex: 0 0 33.333%; }
+  .col-5 { flex: 0 0 41.666%; }
+  .col-6 { flex: 0 0 50%; }
+  .col-7 { flex: 0 0 58.333%; }
+  .col-8 { flex: 0 0 66.666%; }
+  .col-9 { flex: 0 0 75%; }
+  .col-10 { flex: 0 0 83.333%; }
+  .col-11 { flex: 0 0 91.666%; }
+  .col-12 { flex: 0 0 100%; }
+}
+
+/* ========== ОЧЕНЬ БОЛЬШИЕ ЭКРАНЫ ========== 
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+  
+  h1 { font-size: 48px; }
+  h2 { font-size: 38px; }
+}
+
+
+
+
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .box{
+    height: 300px;
+    width: 19%;
+    margin: 5px;
+    
+} 
+
+@media(max-width:1200px)
+    {
+        .box{
+        }
+        
+}
+@media(max-width:900px)
+    {
+        .box{
+            width: 40%;
+            flex: 1 1 40%;
+        }
+        
+}
+@media(max-width:600px)
+    {
+        .box{
+            background-color: violet;
+            width: 90%;
+            flex: 1 1 100%;
+        }
+        
+}
+
+
+
+*/
+
